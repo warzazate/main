@@ -1,0 +1,446 @@
+@font-face {
+    font-family: 'Open Sans';
+    src: url(font/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'BonheurRoyale';
+    src: url(font/BonheurRoyale-Regular.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+button{
+    all: unset;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #CF8F18;
+    color: black;
+    font-size: 100%;
+}
+
+h1{
+    font-size: 175%;
+    margin-top: 1%;
+    margin-left: 1%;
+    font-family: 'BonheurRoyale', sans-serif; 
+    font-size: 250%;
+    font-weight: 500;
+}
+
+h2{
+    font-size: 170%;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    margin-left: 7%;
+    text-transform: uppercase;
+    font-family: 'Open Sans';
+}
+
+
+nav a:hover{
+    color: white;
+    transition: 0.3s;
+}
+
+nav a.active {
+    color: white;
+}
+
+header a.active{
+    color: white;
+}
+
+header button{
+    margin-right: 3%;
+    font-size: 125%;
+}
+
+header a.panier{
+    margin-right: 3%;
+    font-size: 125%;
+}
+
+header button:hover, a.panier:hover{
+    color: white;
+    transition: 0.3s;
+}
+
+
+
+a.menu{
+    margin-right: 5em;
+    color: black;
+}
+
+
+/*Accueil*/
+
+main.Accueil{
+    display: flex;
+    position: relative;
+}
+
+div.left-side{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+
+img.backgroundimg{
+    width: 100%;
+    height: auto;
+}
+
+
+button.shopnow{
+    width: 25%;
+    background-color: #CF8F18;
+    border-color: #CF8F18;
+}
+
+/* Accueil */
+
+/*Contact*/
+
+main.Contact{
+    display: flex;
+    flex-direction: column;
+}
+
+main div.top {
+    display: flex;
+    background-color: #CF8F18;
+    border-top: solid;
+    border-width: thin;
+    padding : 2% 0%;
+    flex-direction: column;
+
+}
+
+main div.top h2{
+    margin-left: 2%;
+}
+
+main div.top p{
+    margin: 0;
+    margin-left: 15%;
+
+}
+
+main div.top p.pied{
+    margin-bottom: 2%;
+}
+
+main div.paragraphe{
+    font-size: 85%;
+}
+
+
+main div.bottom{
+    display: flex;
+    flex-direction: row;
+}
+
+main form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 2.80% 5% 0%;
+}
+
+main div.left{
+    padding-left: 5%;
+}
+
+
+form input, textarea, select{
+    margin-top: 5%;
+    border-style: none;
+    border: solid 1px #dbdbdb;
+    padding: 2%;
+}
+
+select{
+    margin: 0;
+}
+
+label{
+    margin-top: 5%;
+    color: #919191;
+}
+
+
+form input[type="submit"]{
+    width: 25%;
+    margin-bottom: 7%;
+}
+
+form input:hover, textarea:hover, select:hover{
+    border-color: #4E4E4E;
+    transition: 0.5s;
+}
+
+form input:focus, textarea:focus{
+    outline: none;
+    border-color: #4E4E4E;
+}
+
+
+img#hommedaffaire {
+    width: 50%;
+    padding: 5%;
+    height: 50%;
+    display: block;
+    text-align: center;
+}
+
+/*Contact*/
+
+/*Homme*/
+
+#gallery {
+	line-height: 0;
+	column-count:5;
+	column-gap:5px;
+
+ }
+
+
+#gallery img {
+	width: 100% !important;
+	height: auto !important;
+	position: relative;
+	margin-bottom:5px; 
+	filter: grayscale(100%);
+}
+
+#gallery img:hover {
+	filter:none;
+	transition: 0.3s;
+}
+
+ @media (max-width: 1200px) {
+	#gallery {
+	 column-count: 4;
+	}
+}
+
+@media (max-width: 1000px) {
+	#gallery {
+	 column-count: 3;
+	}
+}
+
+
+@media (max-width: 800px) {
+	#gallery {
+	 column-count: 2;
+	}
+}
+
+
+@media (max-width: 400px) {
+	#gallery {
+	 column-count: 1;
+	}
+}
+
+/*Homme*/
+
+/*Chaussures*/
+
+main.Chaussures{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-align: justify;
+    justify-content: center;
+}
+
+main.Chaussures article{
+    box-shadow: 0 15px 30px 1px grey;
+    border-radius: 5px;
+    width: 30%;
+    margin: 3% 1.5%;
+}
+
+main.Chaussures article p{
+    padding: 5%;
+}
+
+img.Chaussures{
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+/*Chaussures*/
+
+/*Panier*/
+main#panier{
+    margin: 10% 3%;
+}
+
+td,th{
+    border: 1px solid black; 
+    padding: 5%;
+}
+
+table{
+    width: 100%;
+}
+
+/*Panier*/
+
+footer{
+    width: 100%;
+    background-color: #CF8F18;
+    position: absolute;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 80%;
+    text-align: center;
+    padding: 1% 2% 0 2%;
+}
+
+li.footergauche {
+    margin-right: 10%;
+}
+
+li.footerdroite{
+    margin-left: 10%;
+}
+
+li p {
+    color: rgb(34, 34, 34);
+    font-weight: 600;
+}
+
+li i{
+    font-size: 250%;
+}
+
+
+@media (max-width: 840px) {
+
+    header.page-header{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav{
+        flex-direction: column;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    a.menu{
+        margin-right: 0;
+        padding-bottom: 1%;
+    }
+
+    a.menu:hover{
+        border-bottom: solid 1px black;
+        transition: 0.3s;
+    }
+    
+    header button i{
+        display: none; 
+    }
+
+    header a.panier{
+        display: none;
+    }
+
+    div.left-side{
+        flex-shrink: 2;
+    }
+
+    div ul{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer{
+        min-height: 50vh;
+    }
+
+    footer ul{
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    li.footergauche{
+        margin-right: 0;
+    }
+
+    li.footerdroite{
+        margin-left: 0;
+    }
+
+    /*Contact*/
+
+    main div.bottom{
+        display: flex;
+        flex-direction: column;
+    }
+
+    img#hommedaffaire{
+        width: 100%;
+        text-align: center;
+    }
+
+    /*Contact*/
+
+}
+
+@media (max-width: 320px) {
+    main h2, p{
+        display: none;
+    }
+
+    footer ul{
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+
+
+}
